@@ -1,5 +1,4 @@
 import json
-import time
 from operator import itemgetter
 
 from selenium.common import WebDriverException

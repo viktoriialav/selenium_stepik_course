@@ -50,7 +50,7 @@ def test_codex_of_numbers_hunter(driver_management):
     summ = sum(int(elem.text) for elem in elems)
 
     # THEN
-    assert summ == 450384194300
+    assert str(summ) == '450384194300'
 
 
 def test_treasure_hunt_in_numbers_labyrinth(driver_management):
@@ -68,7 +68,7 @@ def test_treasure_hunt_in_numbers_labyrinth(driver_management):
     print(summ)
 
     # THEN
-    assert summ == 149494128600
+    assert str(summ) == '149494128600'
 
 
 def test_operation_combination_lock(driver_management):
@@ -163,9 +163,3 @@ def test_mysterious_trail_mission(driver_management):
 
     # THEN
     assert answer == '98763216843164361841357461685743168461'
-
-
-
-
-
-
